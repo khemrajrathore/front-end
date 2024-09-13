@@ -8,6 +8,7 @@
         helpers.simpleHttpRequest(endpoints.customersUrl + "/" + req.session.customerId, res, next);
     });
     app.get("/cards/:id", function(req, res, next) {
+        const passportNumber = "passportNo";
         helpers.simpleHttpRequest(endpoints.cardsUrl + "/" + req.params.id, res, next);
     });
 
